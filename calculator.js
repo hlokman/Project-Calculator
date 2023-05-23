@@ -12,9 +12,9 @@ function divide(a,b) {
     return a / b;
 };
 
-const firstNum = 0;
-const operator = '';
-const secondNum = 0;
+let firstNum = 0;
+let operator = '';
+let secondNum = 0;
 
 function operate(operator, firstNum, secondNum) {
     if (operator === '+') {
@@ -29,3 +29,57 @@ function operate(operator, firstNum, secondNum) {
         return 'Please choose between +, -, * or /';
     }
 };
+
+const display = document.querySelector('.subDisplay');
+const buttons = document.querySelector('.buttons');
+const numbers = document.querySelector('.numbers');
+let displayDefault = '0';
+display.textContent = displayDefault;
+
+
+let storedNum = '';
+
+buttons.addEventListener('click', (e) => {
+    //console.log(e);
+    //console.log(e.target.id)
+    if (e.target.id !== 'C') {
+        if (storedNum.includes('.') == false) {
+            storedNum += e.target.id;
+            display.textContent = storedNum;
+            //return console.log(secondNum)
+            //console.log(storedNum)
+            console.log(typeof(storedNum))
+        } else if (storedNum.includes('.')) {
+            if (e.target.id !== '.') {
+                storedNum += e.target.id;
+                display.textContent = storedNum;
+                //return storedNum
+                //console.log(storedNum)
+                console.log(typeof(storedNum))
+            }
+        }
+    } else if (e.target.id === 'C') {
+        display.textContent = displayDefault;
+        storedNum = '';
+    }
+
+    console.log(storedNum);
+});
+
+
+
+
+
+
+    /*
+    else if (e.target.id == 'b2') {
+        display.textContent = '2';
+        displayValue = 2;
+    } else if (e.target.id == 'b3') {
+        display.textContent = '3'
+        displayValue = 3;
+    } 
+    */
+    
+    
+
