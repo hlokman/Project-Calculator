@@ -9,18 +9,20 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
-    border: 2px solid green; 
+    /*border: 2px solid green;*/ 
+    /*background-color: rgb(40, 40, 40);*/
 }
 
 #container {
     border: 2px solid black;
-    height: 450px;
-    width: 350px;
-    border-radius: 30px;
+    height: 500px;
+    width: 390px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     background-color: rgb(89, 89, 134);
     
 }
@@ -31,16 +33,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 60px;
+    width: 85%;
+    height: 90px;
     margin-bottom: 25px;
     background-color: white;
     background-color: rgb(120, 255, 120);
     font-family:'Digital Numbers'
 }
 .subDisplay {
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 20px;
     margin-left: auto;
     margin-right: 10px;
 }
@@ -51,7 +53,7 @@ body {
     align-items: center;
     gap: 10px;
     /*border: 2px solid green;*/
-    width: 280px;
+    width: 323px;
     height: 300px;
     background-color: white;
     gap: 3px;
@@ -80,7 +82,7 @@ button.opBtn:focus {
 .numbers {
     /*border: 1px solid black;*/
     height: 300px;
-    width: 200px;
+    width: 220px;
     display: grid;
     column-gap: 1px;
     row-gap: 1px;
@@ -98,7 +100,6 @@ button.opBtn:focus {
     row-gap: 1px;
     /*outline: 1px solid black;*/
     grid-template-areas: 
-    'none1 none2'
     'mult div'
     'sub equal'
     'add equal';
