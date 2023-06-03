@@ -18,7 +18,6 @@ function divide(a,b) {
 
 let firstNum = 0;
 let operator = '';
-let secondNum = 0;
 let total = 0;
 
 function operate(operator, firstNum, secondNum) {
@@ -50,9 +49,8 @@ display.textContent = displayDefault;
 
 let num = '';
 let storedNum = '';
-let storedNum2 = '';
 let result = '';
-let result2 = '';
+
 
 buttons.addEventListener('click', (e) => {
     if (e.target.id !== 'C' && e.target.className === 'numBtn') {
@@ -142,13 +140,6 @@ buttons.addEventListener('click', (e) => {
     } 
   };
   
-  /*if (storedNum == 'ERROR') {
-      display.textContent = 'ERROdfggfdRZ'
-      num = '';
-      storedNum= '';
-    }*/
-  
-  
   
   
   //result
@@ -177,9 +168,3 @@ buttons.addEventListener('click', (e) => {
   }; 
   
 });
-
-buttons.addEventListener('click', (e) => {
-  if (e.target.id == 'none1') {
-  console.log(num);
-}
-})
