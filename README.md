@@ -9,4 +9,4 @@ Even with that in mind it's quit difficult to avoid unexpected behavior in one g
 
 Storing the result and make sure the calculator doesn't behave illogically was the main issue for me in this project. It was also a good way for me to practice some CSS grid in order to make the calculator look legit.
 
-[Live Demo](https://hlokman.github.io/Project-Calculator/)
+[Live Demo](https://hlokman.github.io/Project-Calculator/) 
