@@ -8,3 +8,5 @@ The main difficulty was to store the different results and make the different op
 Even with that in mind it's quit difficult to avoid unexpected behavior in one go. I stumbled upon a lot of them trying to complete this project: clicking several times on one operator, clicking several times on equal, dealing with the floating points and large number...
 
 Storing the result and make sure the calculator doesn't behave illogically was the main issue for me in this project. It was also a good way for me to practice some CSS grid in order to make the calculator look legit.
+
+[Live Demo](https://hlokman.github.io/Project-Calculator/)
